@@ -1,0 +1,57 @@
+extends base.pug
+block style 
+    style 
+        include ../static/binary.css
+block content
+    div#btn #[a(href="/searching") &#8592;]
+    div#page 
+        p.header Binary search 
+        div.small Visualization:
+        div#black
+            div.para For binary search we take sorted array
+            div.array A[10]={ 3 , 15 , 29 , 37 , 41 , 53 , 66 , 72 , 84 , 99 }
+            div.number Suppose you have to find 66 
+            div.number N=66
+            div.start Starting index(s=0) , end index(e=9) and m is mid index
+            div.letter
+                div#letter1 s
+                div#letter2 e
+                div#letter3 m
+            div.arr
+                div#arrow1 &#8595;
+                div#arrow2 &#8595;
+                div#arrow3 &#8595;
+            div#vis
+                div 3
+                div 15
+                div 29
+                div 37
+                div 41
+                div 53
+                div 66
+                div 72
+                div 84
+                div 99
+            div#visbor
+                div 0
+                div 1
+                div 2
+                div 3
+                div 4
+                div 5
+                div 6
+                div 7
+                div 8
+                div 9
+            div.display
+                div.place m=(s+e)/2
+                div.place continue &nbsp; the &nbsp; steps &nbsp; while &nbsp; s &nbsp; &lt;= &nbsp; e 
+                div#line1 step:1 &nbsp; m=(0+9)/2 &nbsp; m=4 &nbsp; A[4]=41 &nbsp; N &nbsp; &gt; &nbsp; 41 &nbsp; then &nbsp; s=m+1=4+1=5
+                div#line2 step:2 &nbsp; m=(5+9)/2 &nbsp; m=7 &nbsp; A[7]=72 &nbsp; N &nbsp; &lt; &nbsp; 72 &nbsp; then &nbsp; e=m-1=7-1=6
+                div#line3 step:3 &nbsp; m=(5+6)/2 &nbsp; m=5 &nbsp; A[5]=53 &nbsp; N &nbsp; &gt; &nbsp; 53 &nbsp; then &nbsp; s=m+1=5+1=6
+                div#line4 step:4 &nbsp; m=(6+6)/2 &nbsp; m=6 &nbsp; A[6]=66=N
+                div#found Element is found at index 6
+        div#white
+            div.time Time Complexity :
+            div.complex &nbsp; &nbsp; O(log<sub>2 </sub>n)
+            div.size where n is size of array

@@ -1,0 +1,43 @@
+extends base.pug
+block style 
+    style 
+        include ../static/linear.css
+block content 
+    div#btn #[a(href="/searching") &#8592;]
+    div#page 
+        p.header Linear or Sequential search 
+        div.small Visualization:
+        div#black
+            div.number Suppose you have to find 29
+            div.number N=29
+            div#arrow &#8595;
+            div#vis
+                div 18
+                div 87
+                div 56
+                div 3
+                div 76
+                div 29
+                div 47
+                div 91
+            div#visbor
+                div 0
+                div 1
+                div 2
+                div 3
+                div 4
+                div 5
+                div 6
+                div 7
+            div.display
+                div#line1 N != 18
+                div#line2 N != 87
+                div#line3 N != 56
+                div#line4 N != 3
+                div#line5 N != 76
+            div#line6 N == 29
+            div#found Element is found at index 5
+        div#white
+            div.time Time Complexity :
+            div.complex &nbsp; &nbsp; O(n)
+            div.size where n is size of array

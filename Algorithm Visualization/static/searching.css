@@ -1,0 +1,47 @@
+.para{
+    margin: 0%;
+    padding: 0%;
+    color: white;
+    background: url("https://cdn.searchenginejournal.com/wp-content/uploads/2018/02/SEJ-heroimage.jpg")no-repeat center center/cover;
+    opacity: 1.0;
+    height: 90vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+div.head{
+    position: relative;
+    left: 5px;
+    top: 5px;
+}
+.head ul li{
+    list-style: none;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 25px;
+}
+.head ul li a{
+    text-decoration: none;
+    color: #ef90c0;
+}
+.head ul li a:hover{
+    text-decoration: underline;
+    color: hotpink;
+}
+#para1{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 27px;
+    margin: 5px auto;
+    padding: 5px;
+    padding-bottom: 55px;
+}
+#para2{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 19px;
+}
+#para3,#para4{
+    font-family: 'Times New Roman', Times, serif;
+    padding-left: 50px;
+    font-size: 18px;
+}

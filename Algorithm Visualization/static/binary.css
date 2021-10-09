@@ -1,0 +1,231 @@
+#page{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0%;
+    padding: 0%;
+    height: 110vh;
+    width: 100vw;
+    background: url("https://www.cybertalk.org/wp-content/uploads/2019/11/iStock-1141524430-1.jpg") no-repeat center center/cover;
+}
+p.header{
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding-bottom: 40px;
+    padding-top: 35px;
+    color: #2e0fd7;
+}
+div.small{
+    margin: 10px;
+    position: relative;
+    right: 450px;
+    font-size: 20px;
+}
+#btn{
+    font-size: 24px;
+    border: 2px solid white;
+    width: 25px;
+    height: 30px;
+    padding: 3px;
+    position: fixed;
+    left: 0px;
+}
+#btn a{
+    text-decoration: none;
+    color: white;
+}
+#btn a:hover{
+    font-weight: bold;
+}
+#black{
+    height: 370px;
+    width: 75%;
+    background-color: black;
+    padding: 25px;
+    margin-bottom: 100px;
+}
+#vis,#visbor{
+    display: grid;
+    grid-template-columns: repeat(10,39px);
+    position: relative;
+    left: 430px;
+}
+#visbor{
+    margin-top: 5px;
+    text-align: center;
+}
+#vis div{
+    border: 2px solid white;
+    height: 22px;
+    padding: 3px;
+    text-align: center;
+}
+.display{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#line1{
+    animation: print1 3s;
+    animation-delay: 3s;
+    color: black;
+    animation-fill-mode: forwards;
+}
+@keyframes print1 {
+    form{color:  black;}
+    to{color: white;}
+}
+#line2{
+    animation: print2 3s;
+    animation-delay: 11s;
+    color: black;
+    animation-fill-mode: forwards;
+}
+@keyframes print2 {
+    form{color: black;}
+    to{color: white;}
+}
+#line3{
+    animation: print3 3s;
+    animation-delay: 24s;
+    color: black;
+    animation-fill-mode: forwards;
+}
+@keyframes print3 {
+    form{color:  black;}
+    to{color: white;}
+}
+#line4{
+    animation: print3 3s;
+    animation-delay: 39s;
+    color: black;
+    animation-fill-mode: forwards;
+}
+#found{
+    animation: print3 2s;
+    animation-delay: 44s;
+    color: black;
+    animation-fill-mode: forwards;
+}
+@keyframes print3 {
+    form{color: black;}
+    to{color: white;}
+}
+
+#letter1,#letter2,#letter3{
+    display: inline;
+}
+#letter1{
+    position: absolute;
+    font-size: 23px;
+    left: 635px;
+    animation: move11 30s;
+    animation-delay: 8s;
+    animation-fill-mode: forwards;
+}
+@keyframes move11 {
+    0%{transform: translateX(0px);}
+    10%{transform: translateX(193px);}
+    90%{transform: translateX(193px);}
+    95%{transform: translateX(237px);}
+    100%{transform: translateX(237px);}
+}
+#letter2{
+    position: absolute;
+    font-size: 23px;
+    right: 520px;
+    animation: move21 30s;
+    animation-delay: 21s;
+    animation-fill-mode: forwards;
+}
+@keyframes move21 {
+    0%{transform: translateX(0px);}
+    10%{transform: translateX(-120px);}
+    100%{transform: translateX(-120px);}
+}
+#letter3{
+    position: relative;
+    font-size: 23px;
+    left: 595px;
+    animation: move31 30s;
+    animation-delay: 15s;
+    animation-fill-mode: forwards;
+}
+@keyframes move31 {
+    0%{left: 595px;}
+    10%{left: 708px;}
+    40%{left: 708px;}
+    65%{left: 627px;}
+    90%{left: 627px;}
+    93%{left: 677px;}
+    100%{left: 677px;}
+}
+#arrow1,#arrow2,#arrow3{
+    display: inline;
+}
+#arrow1{
+    position: absolute;
+    font-size: 23px;
+    left: 635px;
+    animation: move1 30s;
+    animation-delay: 8s;
+    animation-fill-mode: forwards;
+}
+@keyframes move1 {
+    0%{transform: translateX(0px);}
+    10%{transform: translateX(193px);}
+    90%{transform: translateX(193px);}
+    95%{transform: translateX(237px);}
+    100%{transform: translateX(237px);}
+}
+#arrow2{
+    position: absolute;
+    font-size: 23px;
+    right: 520px;
+    animation: move2 30s;
+    animation-delay: 21s;
+    animation-fill-mode: forwards;
+}
+@keyframes move2 {
+    0%{transform: translateX(0px);}
+    10%{transform: translateX(-120px);}
+    100%{transform: translateX(-120px);}
+}
+#arrow3{
+    position: relative;
+    font-size: 23px;
+    left: 595px;
+    animation: move31 30s;
+    animation-delay: 15s;
+    animation-fill-mode: forwards;
+}
+@keyframes move3 {
+    0%{left: 595px;}
+    10%{left: 708px;}
+    40%{left: 708px;}
+    65%{left: 627px;}
+    90%{left: 627px;}
+    93%{left: 677px;}
+    100%{left: 677px;}
+}
+.place{
+    border: 2px solid white;
+    padding: 5px;
+    padding-left: 8px;
+    padding-right: 8px;
+    margin-top: 5px;
+    color:  hotpink;
+}
+#white{
+    height: 10vh;
+    width: 75%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    color: black;
+    margin-bottom: 20px;
+}

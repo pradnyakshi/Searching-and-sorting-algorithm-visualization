@@ -1,0 +1,137 @@
+
+#page{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0%;
+    padding: 0%;
+    height: 100vh;
+    width: 100vw;
+    background: url("https://www.cybertalk.org/wp-content/uploads/2019/11/iStock-1141524430-1.jpg") no-repeat center center/cover;
+}
+p.header{
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding-bottom: 45px;
+    color: #2e0fd7;
+}
+div.small{
+    margin: 10px;
+    position: relative;
+    right: 450px;
+    font-size: 20px;
+}
+#btn{
+    font-size: 24px;
+    border: 2px solid white;
+    width: 25px;
+    height: 30px;
+    padding: 3px;
+    position: fixed;
+    left: 0px;
+}
+#btn a{
+    text-decoration: none;
+    color: white;
+}
+#btn a:hover{
+    font-weight: bold;
+}
+#black{
+    height: 355px;
+    width: 75%;
+    background-color: black;
+    padding: 30px;
+    margin-bottom: 110px;
+}
+#vis{
+    display: grid;
+    grid-template-columns: repeat(8,39px);
+    position: relative;
+    left: 430px;
+}
+#visbor{
+    display: grid;
+    grid-template-columns: repeat(8,39px);
+    position: relative;
+    left: 430px;
+    margin-top: 5px;
+    text-align: center;
+}
+#vis div{
+    border: 2px solid white;
+    height: 22px;
+    padding: 3px;
+    text-align: center;
+}
+#arrow{
+    position: relative;
+    font-size: 23px;
+    left: 444px;
+    animation: move 30s;
+    animation-fill-mode: forwards;
+    animation-delay: 3s;
+}
+@keyframes move{
+    0%{transform: translateX(0px);}
+    12.5%{transform: translateX(39px);}
+    25%{transform: translateX(78px);}
+    37.5%{transform: translateX(117px);}
+    50%{transform: translateX(156px);}
+    62.5%{transform: translateX(195px);}
+    100%{transform: translateX(195px);}
+}
+.display{
+    margin-top: 20px;
+    margin-left: 415px;
+    display: grid;
+    align-content: center;
+    grid-template-columns: 44px 50px 50px 39px 50px;
+    color:black;
+}
+#line1{
+    animation: print1 2s;
+    animation-delay: 3s;
+}
+#line2{
+    animation: print1 2s;
+    animation-delay: 5s;
+}
+#line3{
+    animation: print1 2s;
+    animation-delay: 9s;
+}
+#line4{
+    animation: print1 2s;
+    animation-delay: 12s;
+}
+#line5{
+    animation: print1 2s;
+    animation-delay: 16s;
+}
+#line6,#found{
+    margin-left: 500px;
+    animation: print1 2s;
+    animation-delay: 19s;
+    animation-fill-mode: forwards;
+    color: black;
+}
+#line6{
+    margin-left: 550px;
+}
+@keyframes print1 {
+    from{color: black;}
+    to{color: white;}
+}
+#white{
+    height: 10vh;
+    width: 75%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    color: black;
+    margin-bottom: 40px;
+}

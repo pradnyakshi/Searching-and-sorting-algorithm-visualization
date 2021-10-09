@@ -1,0 +1,18 @@
+#intro{
+    margin: 0%;
+    padding: 0%;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+    background: url("https://miro.medium.com/max/2000/1*aTPoc2vSaWmEOV9BuGvSQA.jpeg") no-repeat center center/cover;
+    justify-content: center;
+    align-items: center;
+    opacity: 1.1;
+}
+#intro div{
+    position: relative;
+    bottom: 22px;
+    font-size: 43px;
+    color: #edcbdc;
+}
